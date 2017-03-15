@@ -8,7 +8,7 @@ class App extends Component {
 	imageUrl: ""
   }
   componentDidMount() {
-	fetch('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=american+psycho')
+	fetch('https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=american+psycho')
 	.then( res => res.json())
 	.then( json => json.data.image_url )
 	.then( (imageUrl) => {
